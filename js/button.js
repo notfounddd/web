@@ -6,7 +6,9 @@ button.onclick = function () {
     document.getElementById("demo").innerHTML = "";
   } else {
     var video = document.createElement("video");
-    video.src = "/images/drive.mp4";
+    video.width = 320;
+    video.height = 240;
+    video.src = "js\\drive.mp4";
     video.autoplay = true;
     video.loop = true;
     var demo = document.getElementById("demo");
