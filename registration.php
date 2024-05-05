@@ -19,7 +19,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form method='POST' action='/registration.php'>
+                <form method='POST' action='registration.php'>
                     <div class="row from__reg"><input class="form" type="email" name="email" placeholder="Email"></div>
                     <div class="row from__reg"><input class="form" type="text" name="login" placeholder="Login"></div>
                     <div class="row from__reg"><input class="form" type="password" name="password" placeholder="Password"></div>
@@ -41,7 +41,7 @@ if (isset($_POST['submit']))
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if (!$email ||!$username ||!$password) die ('Пожалуйста введите все значения!');
+    if (!$email || !$username || !$password) die ('Пожалуйста введите все значения!');
 
     $sql = "INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$password')";
     if(!mysqli_query($link, $sql))
