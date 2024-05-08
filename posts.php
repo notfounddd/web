@@ -19,11 +19,20 @@ $main_text = $rows['main_text'];
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.css">
 
-<body>
-    <?php
-        echo "<h1>$title</h1>";
-        echo "<p>$main_text</p>";
-    ?>
-</body>
+    <body>
+    <div class="container-nav">
+        <div class="logo-nav logo"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 index">
+                <?php
+                    echo "<h1>$title</h1>";
+                    echo "<p>$main_text</p>";
+                ?> 
+            </div>
+        </div>
+    </div>
+</body>>
 
 </head>
