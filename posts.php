@@ -33,6 +33,8 @@ $main_text = $rows['main_text'];
             </div>
         </div>
     </div>
-</body>>
+</body>
 
 </head>
+
+
